@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .enviar-derecha{
@@ -120,4 +121,63 @@ footer{
     padding-top: 20px;
     margin: auto;
     justify-content: space-between;
+}
+
+/*media queries for ipad*/
+@media (max-width: 768px){
+    .contenedor{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .contenedor aside{
+        width: 100%;
+        padding:10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        background: #3cb2c8;
+        margin-bottom: 0px;
+    }
+    .articuloRelacionado{
+        width: 280px;
+        margin: auto;
+        background: #3cb2c8;
+        margin: auto;
+        margin-bottom: 5px;
+        padding: 6px;
+        color: white;
+        transition:  all 0.5s;
+        width: 47%;
+    }
+    nav, footer{
+        max-width: 95%;
+    }
+    nav li.menu{
+        padding-bottom: 25px;
+    }
+}
+
+/*media queries for mobile*/
+@media (max-width: 375px){
+    ul{
+        max-width: 95%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .logo{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    nav li.menu{
+        margin-left: 24px;
+    }
+    footer{
+        padding-bottom: 0px;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .articuloRelacionado{
+        width: 100%;
+    }
 }
